@@ -13,7 +13,7 @@
       </div>
     
       <div>
-        <ul class="infinite-list" v-infinite-scroll="getAccountBook" style="height: 500px;overflow:auto;background-color: background-color: rgb(66, 185, 131);">
+        <ul v-infinite-scroll="getAccountBook" style="padding: 2px;margin:2px;width:100%;height: 500px;overflow:auto;background-color: background-color: rgb(66, 185, 131);">
           <li style="list-style: none;">
             <el-form :inline="true" :model="formInline" class="demo-form-inline">
               <el-form-item label="">
@@ -26,7 +26,7 @@
               </el-form-item>
             </el-form>
           </li>
-          <li v-for="vo in list" class="infinite-list-item list-item-li">
+          <li v-for="vo in list" class=" list-item-li">
             <div class="list-item-li-div">
               <el-row :gutter="20">
                 <el-col :span="6" style="text-align: center;">
