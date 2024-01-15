@@ -16,3 +16,29 @@ export function timestampToTime(data) {
     data
   })
 }
+
+
+export function submitAccountBook(data) {
+  return request({
+    url: '/api/tools/submitAccountBook',
+    method: 'post',
+    data
+  })
+}
+
+export function getTotalData(data) {
+  return request({
+    url: '/api/tools/getTotalData',
+    method: 'post',
+    data
+  })
+}
+
+export function getAccountBook(data) {
+  return request({
+    url: '/api/tools/getAccountBook',
+    method: 'post',
+    data
+  })
+}
+

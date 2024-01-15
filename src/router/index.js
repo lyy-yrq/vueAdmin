@@ -184,6 +184,14 @@ export const asyncRoutes = [
         meta: {
           title: '时间戳转化器',
         }
+      },
+      {
+        path: '/tools/account_book',
+        component: () => import('@/views/tools/account_book'),
+        name: 'WorkWebSite',
+        meta: {
+          title: '记账本',
+        }
       }
     ]
   },
